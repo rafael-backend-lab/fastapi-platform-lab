@@ -1,0 +1,25 @@
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# VSCode
+.vscode/
+
+# Ambiente virtual
+.venv/
+env/
+venv/
+
+# Arquivos de sistema
+.DS_Store
+
+# Logs
+logs/
+*.log
+
+# Pytest cache
+.pytest_cache/
+
+# Arquivo de ambiente (NÃO versionar)
+.env
