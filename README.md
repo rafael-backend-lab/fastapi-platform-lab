@@ -1,48 +1,74 @@
 # FastAPI Platform Lab
 
-Backend laboratory project built with FastAPI, PostgreSQL, Docker, JWT authentication, admin routes, notes, audit logging and automated health tests.
+Professional backend laboratory project built with FastAPI, PostgreSQL, Docker, JWT authentication, audit logging and automated health tests.
 
-## Purpose
+## Overview
 
-This repository is a clean professional backend lab focused on:
+This repository demonstrates practical backend API architecture with authentication, persistence, Docker based execution and operational validation.
 
-- API architecture with FastAPI
-- Authentication with JWT
-- PostgreSQL integration
-- Docker based local environment
-- Admin and notes modules
-- Audit logging
-- Basic automated tests
-- Production oriented structure for study and portfolio use
-
-## Stack
+## Tech Stack
 
 - Python
 - FastAPI
-- SQLAlchemy
 - PostgreSQL
-- Docker
-- Pytest
+- SQLAlchemy
 - JWT authentication
+- Docker and Docker Compose
+- Pytest
+- OpenAPI and Swagger documentation
 
-## Local execution
+## Main Features
 
-Run locally with Docker:
+- JWT based authentication
+- Protected API routes
+- Notes module
+- Admin routes
+- Audit logging
+- PostgreSQL integration
+- Docker based local environment
+- Health check endpoint
+- Automated health test
+
+## Local Execution
+
+Start the application with Docker:
 
     docker compose up --build
+
+API documentation:
+
+    http://localhost:8005/docs
 
 Health endpoint:
 
     http://localhost:8005/health
 
-API docs:
+## Environment Variables
 
-    http://localhost:8005/docs
+Create a local .env file based on .env.example when needed.
 
-## Security note
+## Validation
 
-This is a laboratory project. Real production deployments must define secrets through environment variables, rotate credentials and avoid default development values.
+Run syntax validation:
+
+    python -m compileall .
+
+Validate Docker Compose configuration:
+
+    docker compose config
+
+Run tests:
+
+    python -m pytest
+
+## Security Notes
+
+This is a laboratory and portfolio project. For production usage, secrets must be replaced, credentials rotated, CORS restricted, rate limiting added and dependency scans performed.
+
+## Portfolio Value
+
+This repository demonstrates backend API design, authentication flow, database integration, Docker execution, auditability concerns and clean project documentation.
 
 ## Status
 
-Clean import prepared for a new professional GitHub profile.
+Professional portfolio repository maintained under the rafael-backend-lab GitHub profile.
